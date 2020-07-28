@@ -108,7 +108,7 @@ export function query(
     } else if (query & Scope.LEVEL & Scope.INLINE) {
       match = types['inline'];
     }
-  }   else if (isHTMLElement(query)) {
+  } else if (isHTMLElement(query)) {
     
     let names = (query.getAttribute('class') || '').split(/\s+/);
     for (let i in names) {
